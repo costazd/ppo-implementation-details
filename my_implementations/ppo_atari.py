@@ -59,7 +59,7 @@ def parse_args():
     parser = argparse.ArgumentParser()
     parser.add_argument('--exp_name', type=str, default=os.path.basename(__file__).rstrip('.py'),
                         help='the name of this experiment')
-    parser.add_argument('--gym_id', type=str, default='BreakoutNoFrameskip-v4',
+    parser.add_argument('--gym_id', type=str, default='ALE/Breakout-v5',
                         help='the id of the gym environment')
     parser.add_argument('--learning_rate', type=float, default=2.5e-4,
                         help='the learning rate of the optimizer')
